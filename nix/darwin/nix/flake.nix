@@ -47,8 +47,13 @@
             #"Yoink" = 457622435;
          };
           onActivation.cleanup = "zap";
+          onActivation.autoUpdate = true;
+          onActivation.upgrade = true;
         };
 
+      system.defaults = {
+        dock.autohide = true;
+      };
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
       # nix.package = pkgs.nix;
