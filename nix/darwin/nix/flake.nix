@@ -26,7 +26,7 @@
         homebrew = {
           enable = true;
           brews = [
-            "mas"
+             "mas"
             "eza"
             "zoxide"
             "zsh-autosuggestions"
@@ -35,11 +35,13 @@
             "thefuck"
             "fzf"
             "bat"
+            "docker"
+            "docker-compose"
+            "docker-completion"
           ]; 
           casks = [
             "the-unarchiver"
             "iina"
-            "docker"
           ];
           masApps = {
             #"Yoink" = 457622435;
