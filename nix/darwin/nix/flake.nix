@@ -53,7 +53,14 @@
 
       system.defaults = {
         dock.autohide = true;
+        dock.persistent-apps = [
+          "System/Applications/Mail.app"
+          "System/Applications/Calendar.app"
+          "${pkgs.alacritty}/Applications/Alacritty.app"
+        ]; 
+
         finder.FXPreferredViewStyle = "clmv";
+        finder._FXSortFoldersFirst = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
       };
