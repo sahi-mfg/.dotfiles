@@ -53,6 +53,9 @@
 
       system.defaults = {
         dock.autohide = true;
+        finder.FXPreferredViewStyle = "clmv";
+        NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.KeyRepeat = 2;
       };
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
